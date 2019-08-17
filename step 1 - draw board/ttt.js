@@ -42,12 +42,15 @@ function drawBoard(numberOfSquare)
         {
             for (j=0;j<=numberOfSquare;j++)
             {
-                // Đường ngang
-                context.moveTo(0,sectionSize*j);
+                // Đường ngang - Width
+                context.moveTo(0,sectionSize*j); // Di chuyển đến vị trí x,y - Move to x,y position
+
+                // Vẽ từ vị trí moveTo đến vị trí lineTo tạo thành 1 đường thẳng
+                // Draw the line from moveTo(x,y) position to lineTo(x,y) position
                 context.lineTo(sectionSize*numberOfSquare,sectionSize*j);
                 context.stroke();
 
-                // Đường dọc
+                // Đường dọc - Height
                 context.moveTo(sectionSize*i,0);
                 context.lineTo(sectionSize*i,sectionSize*numberOfSquare);
                 context.stroke();
