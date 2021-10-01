@@ -490,9 +490,9 @@ function checkWinColumn(xCordinate,yCordinate,colorPiece)
 
             if (right >= checkArray.length - 1)
             {
-                // Ô vừa click
+                // Ô vừa click - 1 square which player click 
                 drawXwin(xCordinate,yCordinate);
-                // Các ô còn lại.
+                // Các ô còn lại - other squares
                 for (var i = 0; i <= checkArray.length + 1; i++)
                 {
                     drawXwin(xCordinate,checkArray[i]);
@@ -563,9 +563,9 @@ function checkWinColumn(xCordinate,yCordinate,colorPiece)
 
             if (right >= checkArray.length - 1)
             {
-                // Ô vừa click
+                // Ô vừa click - 1 square which player click 
                 drawOwin(xCordinate,yCordinate);
-                // Các ô còn lại.
+                // Các ô còn lại - other squares
                 for (var i = 0; i <= checkArray.length + 1; i++)
                 {
                     drawOwin(xCordinate,checkArray[i]);
